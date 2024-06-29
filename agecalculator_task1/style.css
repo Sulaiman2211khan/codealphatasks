@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-height: 22vh;
+    position: relative;
+}
+.app{
+    font-weight: 600;
+    padding: 10px;
+    font-size: large;
+    font-family:cursive;
+    outline-color: #ff5c5c;
+    background-color: #888;
+    border-bottom: 3px solid;
+    box-shadow: 0 2px 2px #888;
+    color: brown;
+}
+.heading{
+    padding: 10px;
+    font-size: medium;
+    text-align: start;
+}
+
+.agecalculator {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+.agecalculator input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.agecalculator button {
+    padding: 10px 20px; 
+    background-color: #5a95ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.agecalculator #clear{
+    background: #ff5c5c;
+    color: white;
+    margin-left: 10px; 
+}
+button:hover{
+    opacity: 0.8;
+}
+
+.output {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.output div {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.output div span {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.output div p {
+    font-size: 1rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+#error {
+    color: #ff5c5c;
+    position: absolute;
+    top: 38%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid black; */
+    padding: 4px;
+    white-space: nowrap;
+    background-color: white;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+ 
+    #error {
+        font-size: 0.8rem; 
+        margin-left: 28px;
+    }
+}

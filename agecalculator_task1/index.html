@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Alpha Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p class="app">Age Calculator</p>
+        <p class="heading">Please provide your Birthdate.</p>
+        <div class="agecalculator">
+            <input type="date" id="dateinput">
+            <button type="button" id="calculate">Calculate</button>
+            <button type="button" id="clear">Clear</button>
+        </div>
+        <div class="output">
+            <div>
+                <span id="years"></span>
+                <p>Year(s)</p>
+            </div>
+            <div>
+                <span id="months"></span>
+                <p>Month(s)</p>
+            </div>
+            <div>
+                <span id="days"></span>
+                <p>Day(s)</p>
+            </div>
+        </div>
+        <p id="error" class="error-message"></p>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
