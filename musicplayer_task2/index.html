@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu_side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="fa-solid fa-music"></i>Playlist</h4>
+                <h4><span></span><i class="fa-solid fa-music"></i>Last Listened </h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="images/1.jpg" alt="" id="firstimage">
+                    <h5>
+                        Aayi Nai
+                        <div class="author">Sachin Jigar</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="images/1.jpg" alt="">
+                    <h5>
+                        Aayi Nai
+                        <div class="author">Sachin Jigar</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="images/1.jpg" alt="">
+                    <h5>
+                        Aayi Nai
+                        <div class="author">Sachin Jigar</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="images/1.jpg" alt="">
+                    <h5>
+                        Aayi Nai
+                        <div class="author">Sachin Jigar</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="images/1.jpg" alt="">
+                    <h5>
+                        Aayi Nai
+                        <div class="author">Sachin Jigar</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                </li>
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="images/1.jpg" alt="">
+                    <h5>
+                        Aayi Nai
+                        <div class="author">Sachin Jigar</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                </li>
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="images/1.jpg" alt="">
+                    <h5>
+                        Aayi Nai
+                        <div class="author">Sachin Jigar</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                </li>
+
+            </div>
+        </div>
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li id="discover">Discover <span></span></li>
+                    <li id="my-library">MY LIBRARY <span></span></li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search Music...">
+                </div>
+                <div id="searchResults"></div>
+            </nav>
+
+            <div class="content" id="discover-content">
+                <h1 id="song-title">Sachin Jigar-Aayi Nai</h1>
+                <p id="song-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At maxime deleniti hic tenetur nobis non
+                    numquam.
+                    <br> Nisi amet, modi, animi natus aliquid sapiente magnam at ea doloremque, expedita facilis quos!
+                </p>
+                <div class="buttons">
+                    <button>PLAY</button>
+                    <button>ADD</button>
+                </div>
+            </div>
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Popular Songs</h4>
+                    <div class="btn_s">
+                        <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="pop_song">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/1.jpg" alt="Sachin">
+                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                        </div>
+                        <h5>Aayi Nai
+                            <br>
+                            <div class="author">Sachin Jigar</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/1.jpg" alt="Sachin">
+                            <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                        </div>
+                        <h5>Aayi Nai
+                            <br>
+                            <div class="author">Sachin Jigar</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/1.jpg" alt="Sachin">
+                            <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                        </div>
+                        <h5>Aayi Nai
+                            <br>
+                            <div class="author">Sachin Jigar</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/1.jpg" alt="Sachin">
+                            <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                        </div>
+                        <h5>Aayi Nai
+                            <br>
+                            <div class="author">Sachin Jigar</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/1.jpg" alt="Sachin">
+                            <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                        </div>
+                        <h5>Aayi Nai
+                            <br>
+                            <div class="author">Sachin Jigar</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/1.jpg" alt="Sachin">
+                            <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                        </div>
+                        <h5>Aayi Nai
+                            <br>
+                            <div class="author">Sachin Jigar</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/1.jpg" alt="Sachin">
+                            <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                        </div>
+                        <h5>Aayi Nai
+                            <br>
+                            <div class="author">Sachin Jigar</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/1.jpg" alt="Sachin">
+                            <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                        </div>
+                        <h5>Aayi Nai
+                            <br>
+                            <div class="author">Sachin Jigar</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/1.jpg" alt="Sachin">
+                            <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                        </div>
+                        <h5>Aayi Nai
+                            <br>
+                            <div class="author">Sachin Jigar</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+            <div id="library-content" style="display:none;">
+                <!-- Favorite songs content -->
+                <div id="favorite-songs-list">
+                    <!-- Favorite songs will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="master_play">
+            <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="images/1.jpg" alt="Sachin" id="poster_master_play">
+            <h5 id="title">Aayi Nai <br>
+                <div class="author">Sachin Jigar</div>
+            </h5>
+            <div class="icon">
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="masterplay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+            </div>
+            <span id="currentstart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" value="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentend">0:00</span>
+
+            <div class="vol">
+                <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                <input type="range" id="vol" min="0" value="30" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
