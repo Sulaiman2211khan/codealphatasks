@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOOK LIBRARY</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <h1>My Book Library </h1>
+
+  <div class="main">
+    <button id="dataButton" type="button" name="button">START</button>
+    <button id="showButton" type="button" name="button">SHOW</button>
+    <button onclick="myDeleteFunction()">DELETE</button>
+  </div>
+
+  <div class="search">
+    <input type="text" id="searchName" placeholder="Search by book name" />
+    <button id="searchNameButton" type="button">Search by Name</button>
+
+    <input type="text" id="searchAuthor" placeholder="Search by author" />
+    <button id="searchAuthorButton" type="button">Search by Author</button>
+  </div>
+
+  <hr />
+
+  <table>
+    <thead>
+      <tr id="headData">
+        <th>BOOK</th>
+        <th>AUTHOR</th>
+        <th>PAGES</th>
+        <th>READ</th>
+      </tr>
+    </thead>
+    <tbody id="tableData"></tbody>
+  </table>
+  <script src="app.js"></script>
+</body>
+
+</html>
